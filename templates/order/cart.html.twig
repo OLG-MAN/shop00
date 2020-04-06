@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Your cart{% endblock %}
+
+{% block body %}
+	<h1>Cart</h1>
+
+	<div id="cartTable">
+		{{ include('order/_cart_table.html.twig', {'order': order}) }}
+	</div>
+
+	<a href="{{ path('order_make_order') }}" class="btn btn-default">
+		Purchase
+	</a>
+{% endblock %}

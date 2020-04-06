@@ -1,0 +1,4 @@
+<h1>Registration</h1>
+<p>Dear{{ user.fullName }}, for confirm plaese click
+	\<a href="{{ url('security_confirm_email', {'emailCheckCode': user.emailCheckCode}) }}">here</a>
+</p>
